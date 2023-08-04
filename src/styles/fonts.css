@@ -1,0 +1,24 @@
+/* styles/fonts.css */
+
+/* Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Add more @font-face rules for other styles and weights as needed */
+
+/* Optionally, set the default font-family for the whole project */
+body {
+  font-family: "Inter", sans-serif;
+}

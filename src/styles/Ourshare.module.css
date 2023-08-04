@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center the content horizontally */
+  padding: 40px; /* Add some padding around the content */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin-bottom: 30vh;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.title1 {
+  font-size: 1.7rem; /* Adjust the size as needed */
+  font-weight: bold;
+  font-family: "Inter", sans-serif; /* Use Inter font for the title */
+  color: #fff; /* Customize the color */
+}
+.title2 {
+  font-size: 1.7rem; /* Adjust the size as needed */
+  font-weight: bold;
+  font-family: "Inter", sans-serif; /* Use Inter font for the title */
+  color: #fff; /* Customize the color */
+  position: relative;
+  left: 20%;
+}
+
+.description {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  color: #555; /* Customize the color */
+}
+
+.signUpButton {
+  position: absolute; /* Add position absolute to the heading */
+  top: 70%; /* Position the heading 50% from the top */
+  left: 40%; /* Position the heading 50% from the left */
+  transform: translate(-50%, -50%);
+  margin: 1rem;
+  padding: 12px 24px; /* Add some padding to the button */
+  font-size: 1.2rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #fff; /* Customize the text color */
+  background-color: #007bff; /* Customize the button background color */
+  border: none; /* Remove the default button border */
+  border-radius: 4px; /* Add rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.signUpButton:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+.paragragh {
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute; /* Add position absolute to the heading */
+  top: 70%; /* Position the heading 50% from the top */
+  left: 40%; /* Position the heading 50% from the left */
+  transform: translate(+40%, -45%);
+  display: inline-block;
+  margin: 1rem;
+  padding: 12px 24px; /* Add some padding to the button */
+  font-size: 1.2rem; /* Adjust the size as needed */
+  color: #fff; /* Customize the text color */
+  text-align: left;
+}
+
+.pie {
+  /* position: absolute; 
+  top: 33%; 
+  left: 60%; 
+  transform: translate(+40%, -45%);
+  display: inline-block;
+  margin: 1rem;*/
+}
+
+.titleFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.landingFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .landingFlex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title1 {
+    font-size: 5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+  }
+  .title2 {
+    font-size: 5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+    position: relative;
+    left: 20%;
+  }
+}

@@ -1,0 +1,24 @@
+/* src/styles/styles.module.css */
+.navbar {
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  /* background-color: green; */
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbarItem {
+  margin: 0.6rem 1.2rem;
+  color: #ffffff; /* Replace with your desired text color */
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  justify-content: right;
+}
+
+/* Add additional styles for your components here */
