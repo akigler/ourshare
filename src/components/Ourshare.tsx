@@ -26,13 +26,17 @@ const Ourshare = () => {
             className={styles.pie}
           />
         </div>
-        <p className={styles.paragragh}>
-          The first modern equity platform allowing employes to diversify their
-          equity assets to lower risk and increase gains
-        </p>
-        <button className={styles.signUpButton} onClick={handleSignUp}>
-          Sign Up
-        </button>
+        <div className="lowerFlex">
+          <p className={styles.paragragh}>
+            The first modern equity platform allowing employes to diversify
+            their holding giving the opportunity to lower risk and increase
+            gains
+          </p>
+          <button className={styles.signUpButton} onClick={handleSignUp}>
+            Sign Up
+          </button>
+        </div>
+        <h2 className={styles.lowerHeader}>Build strategic ownership</h2>
       </div>
       {/* Add a pop-up form here when the "Sign Up" button is clicked */}
     </section>

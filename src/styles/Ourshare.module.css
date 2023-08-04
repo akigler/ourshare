@@ -16,7 +16,7 @@
 
 .title1 {
   font-size: 1.7rem; /* Adjust the size as needed */
-  font-weight: bold;
+  font-weight: bolder;
   font-family: "Inter", sans-serif; /* Use Inter font for the title */
   color: #fff; /* Customize the color */
 }
@@ -35,18 +35,13 @@
 }
 
 .signUpButton {
-  position: absolute; /* Add position absolute to the heading */
-  top: 70%; /* Position the heading 50% from the top */
-  left: 40%; /* Position the heading 50% from the left */
-  transform: translate(-50%, -50%);
   margin: 1rem;
   padding: 12px 24px; /* Add some padding to the button */
-  font-size: 1.2rem; /* Adjust the size as needed */
+  font-size: 1rem; /* Adjust the size as needed */
   font-weight: bold;
   color: #fff; /* Customize the text color */
   background-color: #007bff; /* Customize the button background color */
   border: none; /* Remove the default button border */
-  border-radius: 4px; /* Add rounded corners */
   cursor: pointer; /* Add a pointer cursor on hover */
 }
 
@@ -54,28 +49,21 @@
   background-color: #0056b3; /* Change the background color on hover */
 }
 .paragragh {
-  max-width: 400px;
-  border-radius: 10px;
-  margin: 0 auto;
-  position: absolute; /* Add position absolute to the heading */
-  top: 70%; /* Position the heading 50% from the top */
-  left: 40%; /* Position the heading 50% from the left */
-  transform: translate(+40%, -45%);
-  display: inline-block;
+  max-width: 710px;
+  margin: auto auto;
+  /* display: inline-block; */
   margin: 1rem;
   padding: 12px 24px; /* Add some padding to the button */
-  font-size: 1.2rem; /* Adjust the size as needed */
+  font-size: 1.1rem; /* Adjust the size as needed */
   color: #fff; /* Customize the text color */
-  text-align: left;
+  /* text-align: left; */
 }
 
 .pie {
-  /* position: absolute; 
-  top: 33%; 
-  left: 60%; 
-  transform: translate(+40%, -45%);
-  display: inline-block;
-  margin: 1rem;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 240px;
+  height: 240px;
 }
 
 .titleFlex {
@@ -90,23 +78,58 @@
   width: 100%;
   align-items: center;
 }
+.lowerFlex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.lowerHeadeer {
+  color: #0056b3;
+}
 @media only screen and (min-width: 768px) {
   .landingFlex {
     flex-direction: row;
     justify-content: space-between;
   }
   .title1 {
-    font-size: 5rem; /* Adjust the size as needed */
+    font-size: 4.8rem; /* Adjust the size as needed */
     font-weight: bold;
     font-family: "Inter", sans-serif; /* Use Inter font for the title */
     color: #fff; /* Customize the color */
   }
   .title2 {
-    font-size: 5rem; /* Adjust the size as needed */
+    font-size: 4.8rem; /* Adjust the size as needed */
     font-weight: bold;
     font-family: "Inter", sans-serif; /* Use Inter font for the title */
     color: #fff; /* Customize the color */
     position: relative;
     left: 20%;
+  }
+  .pie {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 375px;
+    height: 375px;
+  }
+  .signUpButton {
+    margin: 20px 33%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .paragragh {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 10%;
+  }
+  .lowerFlex {
+    justify-content: center;
   }
 }
