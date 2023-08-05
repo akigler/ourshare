@@ -28,9 +28,8 @@ const Ourshare = () => {
         </div>
         <div className="lowerFlex">
           <p className={styles.paragragh}>
-            The first modern equity platform allowing employes to diversify
-            their holding giving the opportunity to lower risk and increase
-            gains
+            The first modern equity platform allowing you to diversify equity
+            holdings giving the opportunity to lower risk and increase gains
           </p>
           <button className={styles.signUpButton} onClick={handleSignUp}>
             Sign Up

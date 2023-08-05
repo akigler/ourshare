@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center the content horizontally */
+  padding: 40px; /* Add some padding around the content */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin-bottom: 30vh;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.paragragh {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto 10%;
+}
