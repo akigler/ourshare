@@ -12,6 +12,7 @@ const SignUp = () => {
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    console.log(formData);
     e.preventDefault();
 
     // Perform basic email validation
