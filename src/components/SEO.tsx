@@ -24,7 +24,9 @@ const SEO: React.FC = () => {
           ],
         }}
       />
-      <Head>{/* Other meta tags can be added here if needed */}</Head>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
     </>
   );
 };
