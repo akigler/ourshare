@@ -2,12 +2,18 @@
 import React, { useRef } from "react";
 import styles from "../styles/Ourshare.module.css"; // Import the CSS module
 import Image from "next/image";
+import SignUpButton from "./SignUpButton";
+import { Sign } from "crypto";
 
 const Ourshare = () => {
   const handleSignUp = () => {
-    // Replace this function with your actual logic to handle the sign-up process
-    // For now, let's just show an alert when the button is clicked
-    alert("Sign up button clicked!");
+    const signUpSection = document.getElementById("signup");
+    if (signUpSection) {
+      signUpSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
@@ -31,13 +37,10 @@ const Ourshare = () => {
             The first modern equity platform allowing you to diversify equity
             holdings giving the opportunity to lower risk and increase gains
           </p>
-          <button className={styles.signUpButton} onClick={handleSignUp}>
-            Sign Up
-          </button>
+          <SignUpButton onClick={handleSignUp} />
         </div>
-        <h2 className={styles.lowerHeader}>Build strategic ownership</h2>
+        <p className={styles.lowerHeader}>Build strategic ownership</p>
       </div>
-      {/* Add a pop-up form here when the "Sign Up" button is clicked */}
     </section>
   );
 };

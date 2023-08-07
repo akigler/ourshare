@@ -34,20 +34,6 @@
   color: #555; /* Customize the color */
 }
 
-.signUpButton {
-  margin: 1rem;
-  padding: 12px 24px; /* Add some padding to the button */
-  font-size: 1rem; /* Adjust the size as needed */
-  font-weight: bold;
-  color: #fff; /* Customize the text color */
-  background-color: #007bff; /* Customize the button background color */
-  border: none; /* Remove the default button border */
-  cursor: pointer; /* Add a pointer cursor on hover */
-}
-
-.signUpButton:hover {
-  background-color: #0056b3; /* Change the background color on hover */
-}
 .paragragh {
   max-width: 710px;
   margin: auto auto;
@@ -92,7 +78,11 @@
   font-weight: bold;
 }
 
+/* tablet */
 @media only screen and (min-width: 768px) {
+}
+/* laptop */
+@media only screen and (min-width: 1024px) {
   .landingFlex {
     flex-direction: row;
     justify-content: space-between;
@@ -134,6 +124,6 @@
     margin: auto 10%;
   }
   .lowerFlex {
-    justify-content: center;
+    /* justify-content: center; */
   }
 }

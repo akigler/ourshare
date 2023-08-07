@@ -1,0 +1,16 @@
+.signUpButton {
+  margin: 1rem;
+  padding: 12px 24px; /* Add some padding to the button */
+  font-size: 1rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #fff; /* Customize the text color */
+  background-color: #007bff; /* Customize the button background color */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  /* display: inline-block; */
+  /* max-width: 150px; */
+}
+
+.signUpButton:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}

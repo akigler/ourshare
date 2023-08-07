@@ -1,40 +1,126 @@
-import React from "react";
+// components/Submit.js
+import { useState } from "react";
+import styles from "../styles/SignUp.module.css";
 
 const SignUp = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Form submission was successful
+        console.log("Form submitted successfully!");
+        // Clear the form after submission
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        console.log("Form submission failed!");
+      }
+    } catch (error) {
+      console.log("Form submission error:", error);
+    }
+  };
+
   return (
-    <section id="signup" className="my-8">
-      <h2>Sign Up to Learn More</h2>
-      {/* Add your sign-up form here */}
-      <form>
-        <div className="my-2">
-          <label htmlFor="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required />
-        </div>
-        <div className="my-2">
-          <label htmlFor="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required />
-        </div>
-        <div className="my-2">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="my-2">
-          <label htmlFor="company">Company:</label>
-          <input type="text" id="company" name="company" />
-        </div>
-        <div className="my-2">
-          <label htmlFor="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" />
-        </div>
-        <div className="my-4">
-          <button
-            type="submit"
-            className="py-2 px-4 bg-green-500 text-white rounded"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+    <section id="signup">
+      <div className={styles.container}>
+        <p>Sign Up to Learn More</p>
+
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="company">Company:</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </section>
   );
 };

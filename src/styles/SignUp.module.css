@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 30px; /* Add some padding around the content */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin-bottom: 5vh;
+}
+.container p {
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vh;
+  font-weight: bold;
+}
+.container div {
+  margin-bottom: 0.21rem; /* Adjust the value to control the spacing */
+}
+.container button {
+  margin: 1rem auto;
+  padding: 12px 24px; /* Add some padding to the button */
+  font-size: 1rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #000000; /* Customize the text color */
+  background-color: #ffffff; /* Customize the button background color */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container button:hover {
+  background-color: #f1f1f1;
+}
+.container input,
+.container textarea {
+  color: black;
+  width: 100%;
+}
+
+.container textarea {
+  height: 175px; /* Set the height to your desired value */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.formLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -5,17 +5,84 @@
   padding: 40px; /* Add some padding around the content */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
 }
 
 .flexRow {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  width: 100%;
+  /* justify-content: space-evenly; */
 }
-.paragragh {
-  display: flex;
-  font-size: 1.3rem;
+.paragraph {
+  font-size: 1.8rem;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
   margin: auto 10%;
+  font-weight: bold;
+}
+.paragraph > span {
+  font-style: italic;
+}
+.flexCOL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: center; */
+  margin: 1rem;
+}
+.flexCOL2 {
+  margin-top: 7vh;
+  justify-content: space-between;
+}
+.productBullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 1rem; */
+}
+.productTitle {
+  margin-left: 1rem;
+}
+.bulletRow {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.3rem;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .paragraph {
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10%;
+    font-weight: bold;
+  }
+  .paragraph > span {
+    font-style: italic;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: space-evenly; */
+  }
+  .paragraph {
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .paragraph > span {
+    font-style: italic;
+  }
 }
