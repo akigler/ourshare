@@ -1,23 +1,25 @@
 // components/Submit.js
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "../styles/SignUp.module.css";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
     email: "",
-    company: "",
-    phone: "",
-    message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Perform basic email validation
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
 
     try {
       const response = await fetch("/api/submit", {
@@ -33,12 +35,7 @@ const SignUp = () => {
         console.log("Form submitted successfully!");
         // Clear the form after submission
         setFormData({
-          firstName: "",
-          lastName: "",
           email: "",
-          company: "",
-          phone: "",
-          message: "",
         });
       } else {
         console.log("Form submission failed!");
@@ -51,33 +48,8 @@ const SignUp = () => {
   return (
     <section id="signup">
       <div className={styles.container}>
-        <p>Sign Up to Learn More</p>
-
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.formRow}>
           <div>
-            <label htmlFor="firstName">First Name:</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="lastName">Last Name:</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -85,39 +57,16 @@ const SignUp = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              pattern="^\S+@\S+\.\S+$"
+              title="Please enter a valid email address."
+              className={styles.emailInput}
+              placeholder="Email"
             />
           </div>
           <div>
-            <label htmlFor="company">Company:</label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              value={formData.company}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="phone">Phone Number:</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
+            <button type="submit" className={styles.formButton}>
+              Join Waitlist
+            </button>
           </div>
         </form>
       </div>

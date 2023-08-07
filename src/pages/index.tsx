@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div>
       <Head>
-        <title>Your Website Title</title>
+        <title>Ourshare</title>
       </Head>
       <header>
         <Navbar />
@@ -17,7 +17,6 @@ const HomePage = () => {
       <main>
         <Ourshare />
         <Product />
-        <SignUp />
       </main>
       <footer>{/* Footer content goes here */}</footer>
     </div>

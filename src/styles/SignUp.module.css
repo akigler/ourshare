@@ -1,54 +1,126 @@
-.container {
+/* tablet */
+.emailInput {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  height: 6vh;
+  border-radius: 7px 7px 7px 7px;
+  width: 100%;
+  cursor: text;
+  color: rgb(17, 17, 17);
+  border: none;
+  margin-bottom: 15px;
+}
+.formRow {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding: 30px; /* Add some padding around the content */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  margin-bottom: 5vh;
-}
-.container p {
-  font-size: 1.8rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4vh;
-  font-weight: bold;
-}
-.container div {
-  margin-bottom: 0.21rem; /* Adjust the value to control the spacing */
-}
-.container button {
-  margin: 1rem auto;
-  padding: 12px 24px; /* Add some padding to the button */
-  font-size: 1rem; /* Adjust the size as needed */
-  font-weight: bold;
-  color: #000000; /* Customize the text color */
-  background-color: #ffffff; /* Customize the button background color */
-  border: none; /* Remove the default button border */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container button:hover {
-  background-color: #f1f1f1;
-}
-.container input,
-.container textarea {
-  color: black;
-  width: 100%;
-}
-
-.container textarea {
-  height: 175px; /* Set the height to your desired value */
-  resize: vertical; /* Allow vertical resizing */
-}
-
-.formLine {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.formButton {
+  cursor: pointer;
+  height: 6vh;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px 7px 7px 7px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .emailInput {
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    height: 6vh;
+    border-radius: 7px 7px 7px 7px;
+    width: 35vw;
+    cursor: text;
+    color: rgb(17, 17, 17);
+    border: none;
+  }
+}
+
+/* laptop */
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 30px; /* Add some padding around the content */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-bottom: 5vh;
+  }
+  .formRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container div {
+    margin-bottom: 0.21rem; /* Adjust the value to control the spacing */
+  }
+  /* .formButton {
+  padding: 12px 24px; 
+  border-radius: 0px 7px 7px 0px;
+  font-size: 1rem; 
+  font-weight: bold;
+  color: #000000; 
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+} */
+  .formButton {
+    cursor: pointer;
+    height: 6vh;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px 7px 7px 7px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0.5rem;
+  }
+
+  .formButton:hover {
+    background-color: #0056b3;
+  }
+  /* .emailInput {
+  color: black;
+  width: 100%;
+  border-radius: 7px 0px 0px 7px;
+  padding: 12px 24px;
+} */
+  .emailInput {
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    height: 6vh;
+    border-radius: 7px 7px 7px 7px;
+    width: 27vw;
+    cursor: text;
+    color: rgb(17, 17, 17);
+    border: none;
+  }
 }

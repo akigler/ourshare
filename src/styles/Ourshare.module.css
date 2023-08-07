@@ -69,7 +69,7 @@
   flex-direction: column;
   margin-top: 200px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .lowerHeader {
   margin-top: 12vh;
@@ -80,9 +80,69 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
+  .title1 {
+    font-size: 2.8rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+  }
+  .title2 {
+    font-size: 2.8rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+    position: relative;
+    left: 20%;
+  }
 }
 /* laptop */
 @media only screen and (min-width: 1024px) {
+  .landingFlex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title1 {
+    font-size: 3rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+  }
+  .title2 {
+    font-size: 3rem; /* Adjust the size as needed */
+    font-weight: bold;
+    font-family: "Inter", sans-serif; /* Use Inter font for the title */
+    color: #fff; /* Customize the color */
+    position: relative;
+    left: 20%;
+  }
+  .pie {
+    margin-left: 60px;
+    margin-right: 20px;
+    width: 310px;
+    height: 310px;
+  }
+  .signUpButton {
+    margin: 20px 33%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .paragragh {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 10%;
+  }
+  .lowerFlex {
+    /* justify-content: center; */
+  }
+}
+/* laptop */
+@media only screen and (min-width: 1440px) {
   .landingFlex {
     flex-direction: row;
     justify-content: space-between;
