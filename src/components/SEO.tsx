@@ -27,12 +27,6 @@ const SEO: React.FC = () => {
       />
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <Image
-          src="/images/RECT_SEO.svg"
-          width={800}
-          height={600}
-          alt="Ourshare"
-        />
       </Head>
     </>
   );
