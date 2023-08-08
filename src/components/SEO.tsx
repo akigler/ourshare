@@ -2,6 +2,7 @@
 
 import { DefaultSeo, DefaultSeoProps } from "next-seo";
 import Head from "next/head";
+import Image from "next/image";
 
 const SEO: React.FC = () => {
   return (
@@ -26,6 +27,12 @@ const SEO: React.FC = () => {
       />
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <Image
+          src="/images/RECT_SEO.svg"
+          width={800}
+          height={600}
+          alt="Ourshare"
+        />
       </Head>
     </>
   );
