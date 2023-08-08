@@ -4,10 +4,12 @@ import Navbar from "../components/Navbar";
 import Ourshare from "../components/Ourshare";
 import Product from "../components/Product";
 import SignUp from "../components/SignUp";
+import SEO from "@/components/SEO";
 
 const HomePage = () => {
   return (
     <div>
+      <SEO />
       <Head>
         <title>Ourshare</title>
       </Head>
