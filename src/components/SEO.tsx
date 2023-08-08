@@ -11,15 +11,15 @@ const SEO: React.FC = () => {
         description="Diversify your equity"
         openGraph={{
           type: "website",
-          url: "https://example.com", // Replace with your website URL
-          title: "Your Website Title",
-          description: "Your website description",
+          url: "https://ourshare.ai", // Replace with your website URL
+          title: "Ourshare",
+          description: "Ourshare - Diversify your equity",
           images: [
             {
-              url: "https://example.com/images/preview-image.jpg", // Replace with the URL of your image
+              url: "/images/RECT_SEO.svg",
               width: 800,
               height: 600,
-              alt: "Image Description", // Replace with a short description of the image
+              alt: "Ourshare",
             },
           ],
         }}
