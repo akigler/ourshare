@@ -5,6 +5,7 @@
   padding: 40px; /* Add some padding around the content */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: black;
   /* margin-bottom: 30vh; */
 }
 .heading {
@@ -27,11 +28,6 @@
   color: #fff; /* Customize the color */
   position: relative;
   left: 20%;
-}
-
-.description {
-  font-size: 1.5rem; /* Adjust the size as needed */
-  color: #555; /* Customize the color */
 }
 
 .paragragh {
