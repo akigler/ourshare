@@ -4,5 +4,10 @@ import "../styles/styles.css";
 import SEO from "../components/SEO";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <SEO />
+      <Component {...pageProps} />
+    </>
+  );
 }

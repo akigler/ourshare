@@ -9,7 +9,6 @@ import SEO from "@/components/SEO";
 const HomePage = () => {
   return (
     <div>
-      <SEO />
       <Head>
         <title>Ourshare</title>
       </Head>
