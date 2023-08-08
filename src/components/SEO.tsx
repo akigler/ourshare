@@ -14,10 +14,10 @@ const SEO: React.FC = () => {
           type: "website",
           url: "https://ourshare.ai", // Replace with your website URL
           title: "Ourshare",
-          description: "Ourshare - Diversify your equity",
+          description: "Ourshare Diversify your equity",
           images: [
             {
-              url: "https://ourshare.ai/RECT_SEO.svg",
+              url: "https://ourshare.ai/RECT_SEO.jpg",
               width: 800,
               height: 600,
               alt: "Ourshare",
