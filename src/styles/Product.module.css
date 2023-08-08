@@ -6,6 +6,7 @@
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   margin-bottom: 10vh;
+  background-color: black;
 }
 
 .flexRow {
