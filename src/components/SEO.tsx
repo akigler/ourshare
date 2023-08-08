@@ -1,20 +1,22 @@
 // components/SEO.tsx
 
-import { DefaultSeo, DefaultSeoProps } from "next-seo";
+// import { DefaultSeo, DefaultSeoProps } from "next-seo";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
 
 const SEO: React.FC = () => {
   return (
     <>
-      <DefaultSeo
+      <NextSeo
         title="Ourshare"
         description="Diversify your equity."
         openGraph={{
           type: "website",
           url: "https://ourshare.ai", // Replace with your website URL
           title: "Ourshare",
-          description: "Ourshare Diversify your equity",
+          description:
+            "Ourshare enables anyone to diversify their equity by swapping shares",
           images: [
             {
               url: "https://ourshare.ai/RECT_SEO.jpg",
