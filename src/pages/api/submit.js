@@ -19,7 +19,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ message: "Form submitted successfully!" });
   } catch (error) {
     console.error("Error saving form data:", error);
-    ////error
     console.log("Form data received:", formData);
     console.error("Error saving form data:", error.message);
 
