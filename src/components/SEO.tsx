@@ -17,7 +17,7 @@ const SEO: React.FC = () => {
           description: "Ourshare - Diversify your equity",
           images: [
             {
-              url: "/images/RECT_SEO.svg",
+              url: "https://ourshare.ai/images/RECT_SEO.svg",
               width: 800,
               height: 600,
               alt: "Ourshare",
