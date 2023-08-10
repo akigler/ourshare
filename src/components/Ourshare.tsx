@@ -25,7 +25,7 @@ const Ourshare = () => {
         <div className="lowerFlex">
           <p className={styles.paragragh}>
             The modern equity platform allowing you to diversify shares giving
-            the opportunity to lower risk and increase gains
+            you the power to lower risk and increase gains
           </p>
           <SignUp />
         </div>
