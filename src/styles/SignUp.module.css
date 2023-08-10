@@ -1,6 +1,6 @@
 /* tablet */
 .container {
-  background-color: black;
+  color: #0c1014;
 }
 .emailInput {
   padding: 12px 20px;
@@ -65,7 +65,6 @@
     border-radius: 8px; /* Add rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     margin-bottom: 5vh;
-    background-color: black;
   }
   .formRow {
     display: flex;
