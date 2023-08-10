@@ -75,8 +75,8 @@ const Product = () => {
         <Image
           src="/images/ALL.svg"
           alt="Portfolio"
-          width={750}
-          height={750}
+          width={700}
+          height={700}
           className={styles.portImage}
         />
       </div>
