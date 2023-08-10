@@ -24,12 +24,12 @@ const Ourshare = () => {
         </div>
         <div className="lowerFlex">
           <p className={styles.paragragh}>
-            The modern equity platform allowing you to diversify shares giving
-            you the power to lower risk and increase gains
+            The first equity platform allowing you to sell, swap, and pool your
+            shares with employees at other fast growing startups
           </p>
           <SignUp />
         </div>
-        <p className={styles.lowerHeader}>Build strategic ownership</p>
+        <p className={styles.lowerHeader}>Own a Stake in Every Startup</p>
       </div>
     </section>
   );

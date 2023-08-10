@@ -17,11 +17,11 @@ const Product = () => {
 
   return (
     <section id="product" className={styles.container}>
-      <div className={styles.paragraphBottom}>
+      {/* <div className={styles.paragraphBottom}>
         <p>90% of all startups fail</p>
         <p>Leverage your assets</p>
         <p>Become your own VC</p>
-      </div>
+      </div> */}
       <div className={styles.flexRow}>
         {/* <div className={styles.flexCOL}>
           <p className={styles.paragraph}>
@@ -41,9 +41,9 @@ const Product = () => {
               />
               <p className={styles.productTitle}>Find Assets</p>
             </div>
-            <p>Find your dream assets</p>
-            <p>Curated portfolios</p>
-            <p>Asses your risk tolerance</p>
+            <p></p>
+            <p>Curated startup portfolios</p>
+            <p>Find high growth startups</p>
           </div>
           <div className={styles.productBullet}>
             <div className={styles.bulletRow}>
@@ -68,8 +68,8 @@ const Product = () => {
               />
               <p className={styles.productTitle}>Exchange</p>
             </div>
-            <p>Finalize swap</p>
-            <p>Secure your portfolio</p>
+            <p>Execute swap</p>
+            <p>Secure your future</p>
           </div>
         </div>
         <Image
@@ -82,9 +82,9 @@ const Product = () => {
       </div>
       <div className={styles.flexCOL2}>
         <p className={styles.paragraph}>
-          <span> Maximize</span> security
+          <span> Diversify</span> your shares
           <br />
-          Venture into diversified capital
+          Unlock <span>unlimited</span> potential
         </p>
       </div>
     </section>
