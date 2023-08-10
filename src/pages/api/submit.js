@@ -7,6 +7,7 @@ export default async function handler(req, res) {
   }
 
   const formData = req.body;
+  formData.signUpTime = new Date();
 
   try {
     // Connect to MongoDB

@@ -3,6 +3,8 @@ import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "../styles/SignUp.module.css";
 
 const SignUp = () => {
+  const [signedUp, setSignedUp] = useState(false);
+
   const [formData, setFormData] = useState({
     email: "",
   });
@@ -33,7 +35,9 @@ const SignUp = () => {
       if (response.ok) {
         // Form submission was successful
         console.log("Form submitted successfully!");
-        // Clear the form after submission
+
+        setSignedUp(true);
+
         setFormData({
           email: "",
         });
@@ -48,27 +52,34 @@ const SignUp = () => {
   return (
     <section id="signup">
       <div className={styles.container}>
-        <form onSubmit={handleSubmit} className={styles.formRow}>
-          <div>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              pattern="^\S+@\S+\.\S+$"
-              title="Please enter a valid email address."
-              className={styles.emailInput}
-              placeholder="Email"
-            />
+        {signedUp ? (
+          <div className={styles.thanks}>
+            <p>Thanks for signing up!</p>
+            <p>We will get back to you soon</p>
           </div>
-          <div>
-            <button type="submit" className={styles.formButton}>
-              Join Waitlist
-            </button>
-          </div>
-        </form>
+        ) : (
+          <form onSubmit={handleSubmit} className={styles.formRow}>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                pattern="^\S+@\S+\.\S+$"
+                title="Please enter a valid email address."
+                className={styles.emailInput}
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <button type="submit" className={styles.formButton}>
+                Join Waitlist
+              </button>
+            </div>
+          </form>
+        )}
       </div>
     </section>
   );
