@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navLeft}>
         <Image
-          src="/images/RECT_OURSHARE_BLACK_FULL.svg"
+          src="/images/LOGO_NO_BOX.svg"
           alt="OurShare Logo"
-          width={160}
-          height={160}
+          width={165}
+          height={165}
         />
       </div>
     </nav>

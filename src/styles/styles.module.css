@@ -44,6 +44,8 @@
   .navbar {
     left: 0;
     display: flex;
+    margin-left: 3rem;
+
     justify-content: space-between;
     padding: 1rem;
     /* background-color: green; */
