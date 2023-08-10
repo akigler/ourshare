@@ -41,7 +41,8 @@ const Product = () => {
               />
               <p className={styles.productTitle}>Find Assets</p>
             </div>
-            <p>Find your dream assets from curated lists</p>
+            <p>Find your dream assets</p>
+            <p>Curated portfolios</p>
             <p>Asses your risk tolerance</p>
           </div>
           <div className={styles.productBullet}>
