@@ -4,11 +4,11 @@ The ability to spread and diviersify assets creates more secured wealth and retu
 
 ## Built On
 
-Next.js
-MongoDB database
+Next.js  
+MongoDB database  
 Serverless functions
 
-Designed in Figma
+Designed in Figma  
 Deployed on Vercel
 
 All designs and code was written by Aaron Kigler
