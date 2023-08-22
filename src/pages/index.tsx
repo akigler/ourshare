@@ -4,12 +4,13 @@ import Navbar from "../components/Navbar";
 import Ourshare from "../components/Ourshare";
 import Product from "../components/Product";
 import SignUp from "../components/SignUp";
+import SEO from "@/components/SEO";
 
 const HomePage = () => {
   return (
     <div>
       <Head>
-        <title>Your Website Title</title>
+        <title>Ourshare</title>
       </Head>
       <header>
         <Navbar />
@@ -17,7 +18,6 @@ const HomePage = () => {
       <main>
         <Ourshare />
         <Product />
-        <SignUp />
       </main>
       <footer>{/* Footer content goes here */}</footer>
     </div>

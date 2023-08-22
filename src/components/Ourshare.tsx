@@ -2,20 +2,10 @@
 import React, { useRef } from "react";
 import styles from "../styles/Ourshare.module.css"; // Import the CSS module
 import Image from "next/image";
-import SignUpButton from "./SignUpButton";
+import SignUp from "./SignUp";
 import { Sign } from "crypto";
 
 const Ourshare = () => {
-  const handleSignUp = () => {
-    const signUpSection = document.getElementById("signup");
-    if (signUpSection) {
-      signUpSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <section id="ourshare" className={styles.container}>
       <div className={styles.heading}>
@@ -34,12 +24,12 @@ const Ourshare = () => {
         </div>
         <div className="lowerFlex">
           <p className={styles.paragragh}>
-            The first modern equity platform allowing you to diversify equity
-            holdings giving the opportunity to lower risk and increase gains
+            The first equity platform allowing you to sell, swap, and pool your
+            shares with employees at other fast growing startups
           </p>
-          <SignUpButton onClick={handleSignUp} />
+          <SignUp />
         </div>
-        <p className={styles.lowerHeader}>Build strategic ownership</p>
+        <p className={styles.lowerHeader}>Own a Stake in Every Startup</p>
       </div>
     </section>
   );
