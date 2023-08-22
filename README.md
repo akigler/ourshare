@@ -1,3 +1,5 @@
+# Ourshare
+
 Ourshare is a project whos goal is to allow the sharing of equity between individuals and orginaizations.
 
 The ability to spread and diviersify assets creates more secured wealth and returns.
