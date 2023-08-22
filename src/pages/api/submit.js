@@ -7,6 +7,7 @@ export default async function handler(req, res) {
   }
 
   const formData = req.body;
+  formData.signUpTime = new Date();
 
   try {
     // Connect to MongoDB
@@ -19,6 +20,13 @@ export default async function handler(req, res) {
     return res.status(200).json({ message: "Form submitted successfully!" });
   } catch (error) {
     console.error("Error saving form data:", error);
+    console.log("Form data received:", formData);
+    console.error("Error saving form data:", error.message);
+
+    if (error.message.includes("some specific error text")) {
+      return res.status(400).json({ message: "A specific error message" });
+    }
+    console.error("Error saving form data:", error.message);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 }
