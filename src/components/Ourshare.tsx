@@ -11,8 +11,8 @@ const Ourshare = () => {
       <div className={styles.heading}>
         <div className={styles.landingFlex}>
           <div className={styles.titleFlex}>
-            <h1 className={styles.title1}>Diversify your equity</h1>
-            <h1 className={styles.title2}>{"      "} Secure your future</h1>
+            <h1 className={styles.title1}>Bringing Power</h1>
+            <h1 className={styles.title2}>{"      "} To Your Equity</h1>
           </div>
           <Image
             src="/images/PIEW.svg"
@@ -24,8 +24,9 @@ const Ourshare = () => {
         </div>
         <div className="lowerFlex">
           <p className={styles.paragragh}>
-            The first equity platform allowing you to sell, swap, and pool your
-            shares with employees at other fast growing startups
+            The best startups in the world use Ourshare to give their employees
+            the ultimate perk of investing without boundaries. Allowing you to
+            take ownership of fast growing companies through trade-ables.
           </p>
           <SignUp />
         </div>
