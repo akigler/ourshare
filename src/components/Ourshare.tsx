@@ -11,8 +11,8 @@ const Ourshare = () => {
       <div className={styles.heading}>
         <div className={styles.landingFlex}>
           <div className={styles.titleFlex}>
-            <h1 className={styles.title1}>Bringing Power</h1>
-            <h1 className={styles.title2}>{"      "} To Your Equity</h1>
+            <h1 className={styles.title1}>Bringing power</h1>
+            <h1 className={styles.title2}>{"      "} to your equity</h1>
           </div>
           <Image
             src="/images/PIEW.svg"
