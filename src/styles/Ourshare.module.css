@@ -31,7 +31,7 @@
 
 .paragragh {
   max-width: 710px;
-  font-family: "Inter", sans-serif;
+  font-family: "Domine", sans-serif;
   text-align: left;
   margin: auto auto;
   /* display: inline-block; */
@@ -146,7 +146,6 @@
   .paragragh {
     padding-top: 20px;
     display: flex;
-    font-family: "Inter", sans-serif;
     text-align: left;
     font-size: 1.5rem;
     justify-content: center;
@@ -198,7 +197,6 @@
   .paragragh {
     display: flex;
     font-size: 1.5rem;
-    font-family: "Inter", sans-serif;
     justify-content: center;
     text-align: left;
     align-items: center;

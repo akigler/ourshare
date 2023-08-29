@@ -16,6 +16,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Domine";
+  src: url("../../fonts/Domine-VariableFont_wght.ttf");
+}
+
 /* Add more @font-face rules for other styles and weights as needed */
 
 /* Optionally, set the default font-family for the whole project */
