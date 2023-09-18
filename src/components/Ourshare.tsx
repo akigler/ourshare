@@ -23,10 +23,16 @@ const Ourshare = () => {
           />
         </div>
         <div className="lowerFlex">
-          <p className={styles.paragragh}>
+          {/* <p className={styles.paragragh}>
             The best startups in the world use Ourshare to give their employees
             the ultimate perk of investing without boundaries. Allowing you to
             take ownership of fast growing companies through trade-ables.
+          </p> */}
+          <p className={styles.paragragh}>
+            Ourshare allows you to pool your shares with others to create a
+            collective investment fund to secure your future. Few startups
+            actually succeed. A diverse portfolio minimizes risks and maximizes
+            opportunities. The future is brighter when we share it.
           </p>
           <SignUp />
         </div>
