@@ -68,7 +68,7 @@ const Product = () => {
               />
               <p className={styles.productTitle}>Exchange</p>
             </div>
-            <p>Enter pool</p>
+            <p>Enter fund</p>
             <p>Secure your future</p>
           </div>
         </div>
