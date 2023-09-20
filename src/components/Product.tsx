@@ -43,7 +43,7 @@ const Product = () => {
             </div>
             <p></p>
             <p>Curated startup portfolios</p>
-            <p>Find high growth startups</p>
+            <p>Find high growth startup funds</p>
           </div>
           <div className={styles.productBullet}>
             <div className={styles.bulletRow}>
@@ -66,7 +66,7 @@ const Product = () => {
                 width={40}
                 height={40}
               />
-              <p className={styles.productTitle}>Exchange</p>
+              <p className={styles.productTitle}>Pool</p>
             </div>
             <p>Enter fund</p>
             <p>Secure your future</p>
