@@ -66,9 +66,9 @@ const Product = () => {
                 width={40}
                 height={40}
               />
-              <p className={styles.productTitle}>Pool</p>
+              <p className={styles.productTitle}>Enter Fund</p>
             </div>
-            <p>Enter fund</p>
+            <p>Pool assets</p>
             <p>Secure your future</p>
           </div>
         </div>
