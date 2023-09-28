@@ -16,7 +16,7 @@ const SEO: React.FC = () => {
           url: "https://ourshare.ai", // Replace with your website URL
           title: "Ourshare",
           description:
-            "Ourshare enables anyone to diversify their equity by swapping shares",
+            "Ourshare enables anyone to diversify their equity by pooling shares",
           images: [
             {
               url: "https://ourshare.ai/RECT_SEO.jpg",
