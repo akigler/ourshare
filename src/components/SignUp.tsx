@@ -3,6 +3,7 @@ import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "../styles/SignUp.module.css";
 
 const SignUp = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [signedUp, setSignedUp] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ const SignUp = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setIsSubmitting(true);
 
     // Perform basic email validation
     const emailRegex = /^\S+@\S+\.\S+$/;
@@ -47,6 +50,7 @@ const SignUp = () => {
     } catch (error) {
       console.log("Form submission error:", error);
     }
+    setIsSubmitting(false);
   };
 
   return (
@@ -74,7 +78,11 @@ const SignUp = () => {
               />
             </div>
             <div>
-              <button type="submit" className={styles.formButton}>
+              <button
+                type="submit"
+                className={styles.formButton}
+                disabled={isSubmitting}
+              >
                 Join Waitlist
               </button>
             </div>
