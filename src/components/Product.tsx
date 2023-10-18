@@ -73,7 +73,7 @@ const Product = () => {
           </div>
         </div>
         <Image
-          src="/images/ALL.svg"
+          src="/images/ALL2.svg"
           alt="Portfolio"
           width={700}
           height={700}
