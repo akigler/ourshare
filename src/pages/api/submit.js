@@ -73,7 +73,7 @@ export default async function handler(req, res) {
             <p>Thanks for being interested in OurShare, the first equity platform that allows employees to have a better chance of unlocking value for yourself and others. The reality is that most startups equity ends up becoming worthless since 95% of startups fail. Which is why the venture capital model only works when they invest in many startups to hopefully own a piece of the next Airbnb, Uber, or Google. With Ourshare, you can now invest your shares and own a piece of every startup too so you can have the best chances of financial freedom. With that said, I am super excited to let you know that we are almost ready to launch OurShare Fund 1.<br><br> 
 
             <div class="email-sign-form">To be able to participate you will need to fill out this form to evaluate your ownership of shares:<br></div>
-            <a href="https://forms.gle/ZzTYDzsfPi8A7NHm7"><strong><u>This Form</u></strong></a><br><br>
+            <a href="https://forms.gle/ZzTYDzsfPi8A7NHm7"><strong><u>Fund Sign Up Form</u></strong></a><br><br>
             Our team will then review and see what shares of yours are eligible to be contributed into Fund 1. The more shares you contribute the larger % ownership you will have. We already have over 50+ fast-growing startups interested from different stages, industries, and geographies. Join us and get ready to collect the upside of all of them through OurShare!<br><br>
             
             If you have any questions, don’t hesitate to reach out. I am excited to go on this incredible journey with you! </p>
@@ -85,7 +85,6 @@ export default async function handler(req, res) {
         </div>
       </body>
       </html>
-      
   `,
     };
 
