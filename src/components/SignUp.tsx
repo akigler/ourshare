@@ -58,8 +58,12 @@ const SignUp = () => {
       <div className={styles.container}>
         {signedUp ? (
           <div className={styles.thanks}>
-            <p>Thanks for signing up!</p>
-            <p>We will get back to you soon</p>
+            {/* <p>Thanks for signing up!</p> */}
+            {/* <br></br> */}
+            <p>
+              Please check your email to complete<br></br> the Fund sign up
+              process!
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className={styles.formRow}>
