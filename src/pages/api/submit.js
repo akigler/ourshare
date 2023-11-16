@@ -52,6 +52,7 @@ export default async function handler(req, res) {
             margin-top: 20px;
             font-size: 16px; /* Larger font size */
             line-height: 1.6; /* Improved line spacing for readability */
+            color: #000000;
           }
           .email-content p {
             margin-bottom: 20px; /* Spacing between paragraphs */
