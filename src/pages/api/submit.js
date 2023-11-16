@@ -62,7 +62,6 @@ export default async function handler(req, res) {
           }
           .email-signature {
             margin-top: 30px;
-            font-weight: bold;
           }
         </style>
       </head>
