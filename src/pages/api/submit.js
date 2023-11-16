@@ -29,6 +29,7 @@ export default async function handler(req, res) {
     });
 
     // Email options
+    //removed banner from email
     let mailOptions = {
       from: `"OurShare - Dean" <${process.env.EMAIL_USERNAME}>`,
       to: formData.email, // User's email from the form data
@@ -67,7 +68,6 @@ export default async function handler(req, res) {
       </head>
       <body>
         <div class="email-container">
-        <img src="https://www.ourshare.ai/images/OurShareBanners.png" alt="Banner" style="width:100%; max-width:600px;">
           <div class="email-content">
             <p>Hi!</p>
             <p>Thanks for being interested in OurShare, the first equity platform that allows employees to have a better chance of unlocking value for yourself and others. The reality is that most startups equity ends up becoming worthless since 95% of startups fail. Which is why the venture capital model only works when they invest in many startups to hopefully own a piece of the next Airbnb, Uber, or Google. With Ourshare, you can now invest your shares and own a piece of every startup too so you can have the best chances of financial freedom. With that said, I am super excited to let you know that we are almost ready to launch OurShare Fund 1.<br><br> 
