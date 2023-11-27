@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     // Email options
     //removed banner from email
     let mailOptions = {
-      from: `"OurShare - Dean" <${process.env.EMAIL_USERNAME}>`,
+      from: `"OurShare - Dean " <${process.env.EMAIL_USERNAME}>`,
       to: formData.email, // User's email from the form data
       subject: "Join OurShare - Unlock your equity!",
       html: `
@@ -69,17 +69,23 @@ export default async function handler(req, res) {
       <body>
         <div class="email-container">
           <div class="email-content">
-            <p>Hi!</p>
-            <p>Thanks for being interested in OurShare, the first equity platform that allows employees to have a better chance of unlocking value for yourself and others. The reality is that most startups equity ends up becoming worthless since 95% of startups fail. Which is why the venture capital model only works when they invest in many startups to hopefully own a piece of the next Airbnb, Uber, or Google. With Ourshare, you can now invest your shares and own a piece of every startup too so you can have the best chances of financial freedom. With that said, I am super excited to let you know that we are almost ready to launch OurShare Fund 1.<br><br> 
-
+            <p>Welcome to OurShare!</p>
+            <p>Thank you for signing up and taking the first step toward a new era of equity investing. OurShare is the first equity platform that allows you to invest your shares into other startups and own a piece of them all to unlock the most value. <br><br> 
+<!--  
             <div class="email-sign-form">To be able to participate you will need to fill out this form to evaluate your ownership of shares:<br></div>
             <a href="https://forms.gle/ZzTYDzsfPi8A7NHm7"><strong><u>Fund Sign Up Form</u></strong></a><br><br>
             Our team will then review and see what shares of yours are eligible to be contributed into Fund 1. The more shares you contribute the larger % ownership you will have. We already have over 50+ fast-growing startups interested from different stages, industries, and geographies. Join us and get ready to collect the upside of all of them through OurShare!<br><br>
+-->           
+            <div class="email-sign-form">To kickstart your journey with us, we invite you to schedule a brief 15-minute call with one of our experienced advisors:<br></div>
+            <a href="https://calendly.com/ourshare/30min"><strong><u>Schedule Meeting</u></strong></a><br><br>
+            We look forward to helping you get the most value from your equity.
+ </p>
+ <!-- Your email content -->
+ <p>Thanks,<br>The OurShare Team</p>
             
-            If you have any questions, don’t hesitate to reach out. I am excited to go on this incredible journey with you! </p>
-            <!-- Your email content -->
             <div class="email-signature">
-              <p>Thanks,<br>Dean Glas<br>Co-Founder | OurShare</p>
+              
+              <!--<p>Thanks,<br>Dean Glas<br>Co-Founder | OurShare</p>-->
             </div>
           </div>
         </div>

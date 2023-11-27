@@ -61,7 +61,7 @@ const SignUp = () => {
             {/* <p>Thanks for signing up!</p> */}
             {/* <br></br> */}
             <p>
-              Please check your email to complete<br></br> the Fund sign up
+              Please check your email to complete<br></br> the fund sign up
               process!
             </p>
           </div>
